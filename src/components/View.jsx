@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Navbar from './Navbar'
 import axios from 'axios'
@@ -15,6 +15,7 @@ const View = () => {
                 }
             ).catch().finally()
         }
+        useEffect(()=>{fetchData()},[])
   return (
     <div>
 <Navbar/>
