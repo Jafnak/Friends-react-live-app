@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 
 
 const Add = () => {
+
   return (
     <div>
 <Navbar/>
